@@ -1,0 +1,86 @@
+<div class="bg-modulo-evaluaciones flex-grow-1 py-4">
+  <div class="container">
+    
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2><i class="bi bi-clipboard-data text-primary me-2"></i>Evaluaciones de Práctica</h2>
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalEvaluacion">
+        <i class="bi bi-plus-circle me-1"></i> Nueva Evaluación
+      </button>
+    </div>
+
+    <div class="card shadow-sm mb-4 border-0 bg-transparent">
+      <div class="card-body p-0">
+        <table class="table table-hover table-striped align-middle mb-0">
+          <thead class="table-dark">
+            <tr>
+              <th>ID</th>
+              <th>Estudiante</th>
+              <th>Evaluador</th>
+              <th>Calificación</th>
+              <th>Resultado</th>
+              <th class="text-end">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td class="fw-bold">Juan Pablo Martínez</td>
+              <td>María Fernández (Tutor)</td>
+              <td>4.8 / 5.0</td>
+              <td><span class="badge bg-success">Aprobado</span></td>
+              <td class="text-end">
+                <button class="btn btn-sm btn-outline-primary me-1" data-bs-toggle="modal" data-bs-target="#modalEvaluacion" aria-label="Editar evaluación">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button class="btn btn-sm btn-outline-danger" aria-label="Eliminar evaluación">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="modalEvaluacion" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title">Formulario de Evaluación Final</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar modal"></button>
+      </div>
+      <div class="modal-body">
+        <form onsubmit={(e) => e.preventDefault()} class="row g-3">
+          <div class="col-12">
+            <label for="est_ev" class="form-label">Estudiante a Evaluar</label>
+            <select id="est_ev" class="form-select">
+              <option selected>Juan Pablo Martínez</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <label for="nota_ev" class="form-label">Nota Final (0.0 - 5.0)</label>
+            <input type="number" step="0.1" id="nota_ev" class="form-control" placeholder="4.5" />
+          </div>
+          <div class="col-md-6">
+            <label for="res_ev" class="form-label">Resultado Final</label>
+            <select id="res_ev" class="form-select">
+              <option selected>Aprobado</option>
+              <option>Reprobado</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label for="obs_ev" class="form-label">Observaciones</label>
+            <textarea id="obs_ev" class="form-control" rows="3" placeholder="Comentarios sobre el desempeño..."></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>

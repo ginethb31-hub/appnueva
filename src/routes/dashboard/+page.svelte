@@ -1,0 +1,56 @@
+<div class="bg-modulo-dashboard flex-grow-1 py-4">
+  <div class="container">
+    
+    <h2 class="mb-4"><i class="bi bi-speedometer2 text-primary me-2"></i>Panel de Control</h2>
+
+    <div class="row g-3 mb-4">
+      <div class="col-md-3">
+        <div class="card border-0 bg-primary text-white shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title text-uppercase">Prácticas Activas</h6>
+            <h3 class="fw-bold mb-0">12</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 bg-success text-white shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title text-uppercase">Empresas Aliadas</h6>
+            <h3 class="fw-bold mb-0">8</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 bg-warning text-dark shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title text-uppercase">Postulaciones Pendientes</h6>
+            <h3 class="fw-bold mb-0">25</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 bg-info text-dark shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title text-uppercase">Egresados Registrados</h6>
+            <h3 class="fw-bold mb-0">45</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card shadow-sm border-0 bg-transparent">
+      <div class="card-header bg-white fw-bold bg-transparent">
+        Resumen de Estado de Prácticas
+      </div>
+      <div class="card-body">
+        <p class="mb-1 fw-semibold">Progreso General del Periodo Académico</p>
+        <div class="progress mb-3" style="height: 25px;">
+          <div class="progress-bar bg-success" style="width: 60%">60% Finalizadas</div>
+          <div class="progress-bar bg-primary" style="width: 30%">30% En Curso</div>
+          <div class="progress-bar bg-danger" style="width: 10%">10% Pendientes</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
