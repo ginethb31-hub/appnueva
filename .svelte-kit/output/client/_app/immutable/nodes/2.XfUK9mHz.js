@@ -1,0 +1,1 @@
+import{F as e,I as t,n}from"../chunks/EsmAB3Op.js";import{t as r}from"../chunks/8MD5-eAc.js";import"../chunks/xihTtKlq.js";import"../chunks/X1S-QcG9.js";function i(i,a){t(a,!0),n(()=>{r(`/login`)}),e()}export{i as component};
